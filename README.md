@@ -1,11 +1,11 @@
 # reform
 
 [![Release](https://img.shields.io/github/release/go-reform/reform.svg)](https://github.com/go-reform/reform/releases/latest)
-[![PkgGoDev](https://pkg.go.dev/badge/gopkg.in/reform.v1)](https://pkg.go.dev/gopkg.in/reform.v1)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/qw4n7y/reform)](https://pkg.go.dev/github.com/qw4n7y/reform)
 [![CI](https://github.com/go-reform/reform/workflows/CI/badge.svg?branch=main&event=push)](https://github.com/go-reform/reform/actions)
 [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/srwa0cuwf91qpjge/branch/main?svg=true)](https://ci.appveyor.com/project/AlekSi/reform/branch/main)
 [![Coverage Report](https://codecov.io/gh/go-reform/reform/branch/main/graph/badge.svg)](https://codecov.io/gh/go-reform/reform)
-[![Go Report Card](https://goreportcard.com/badge/gopkg.in/reform.v1)](https://goreportcard.com/report/gopkg.in/reform.v1)
+[![Go Report Card](https://goreportcard.com/badge/github.com/qw4n7y/reform)](https://goreportcard.com/report/github.com/qw4n7y/reform)
 
 <a href="https://en.wikipedia.org/wiki/Peter_the_Great"><img align="right" alt="Reform gopher logo" title="Peter the Reformer" src=".github/reform.png"></a>
 
@@ -34,23 +34,23 @@ Notes:
 1. Make sure you are using Go 1.17+, and Go modules support is enabled.
    Install or update `reform` package, `reform` and `reform-db` commands with:
     ```
-    go get -v gopkg.in/reform.v1/...
+    go get -v github.com/qw4n7y/reform/...
     ```
 
    If you are not using Go modules yet, you can use dep to vendor desired version of reform,
    and then install commands with:
     ```
-    go install -v ./vendor/gopkg.in/reform.v1/...
+    go install -v ./vendor/github.com/qw4n7y/reform/...
     ```
 
    You can also install the latest stable version of reform without using Go modules thanks to
-   [gopkg.in redirection](https://gopkg.in/reform.v1), but please note that this will not use the stable
+   [gopkg.in redirection](https://github.com/qw4n7y/reform), but please note that this will not use the stable
    versions of the database drivers:
     ```
-    env GO111MODULE=off go get -u -v gopkg.in/reform.v1/...
+    env GO111MODULE=off go get -u -v github.com/qw4n7y/reform/...
     ```
 
-   Canonical import path is `gopkg.in/reform.v1`; using `github.com/go-reform/reform` will not work.
+   Canonical import path is `github.com/qw4n7y/reform`; using `github.com/go-reform/reform` will not work.
 
    See note about versioning and branches below.
 
@@ -82,7 +82,7 @@ Notes:
 4. Run `reform [package or directory]` or `go generate [package or file]`. This will create `person_reform.go`
    in the same package with type `PersonTable` and methods on `Person`.
 
-5. See [documentation](https://godoc.org/gopkg.in/reform.v1) how to use it. Simple example:
+5. See [documentation](https://godoc.org/github.com/qw4n7y/reform) how to use it. Simple example:
 
     ```go
 	// Get *sql.DB as usual. PostgreSQL example:

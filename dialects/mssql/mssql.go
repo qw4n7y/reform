@@ -1,10 +1,10 @@
 // Package mssql implements reform.Dialect for Microsoft SQL Server (mssql driver).
 //
 // Deprecated: Use sqlserver dialect instead. https://github.com/denisenkom/go-mssqldb#deprecated
-package mssql // import "gopkg.in/reform.v1/dialects/mssql"
+package mssql // import "github.com/qw4n7y/reform/dialects/mssql"
 
 import (
-	"gopkg.in/reform.v1"
+	"github.com/qw4n7y/reform"
 )
 
 type mssql struct{}

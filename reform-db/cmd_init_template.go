@@ -3,7 +3,7 @@ package main
 import (
 	"text/template"
 
-	"gopkg.in/reform.v1/parse"
+	"github.com/qw4n7y/reform/parse"
 )
 
 // StructData contains struct information for template.

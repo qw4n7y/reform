@@ -13,9 +13,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"gopkg.in/reform.v1"
-	"gopkg.in/reform.v1/dialects/postgresql"
-	. "gopkg.in/reform.v1/internal/test/models"
+	"github.com/qw4n7y/reform"
+	"github.com/qw4n7y/reform/dialects/postgresql"
+	. "github.com/qw4n7y/reform/internal/test/models"
 )
 
 func TestBeginCommit(t *testing.T) {

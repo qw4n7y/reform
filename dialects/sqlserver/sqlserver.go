@@ -1,10 +1,10 @@
 // Package sqlserver implements reform.Dialect for Microsoft SQL Server (sqlserver driver).
-package sqlserver // import "gopkg.in/reform.v1/dialects/sqlserver"
+package sqlserver // import "github.com/qw4n7y/reform/dialects/sqlserver"
 
 import (
 	"strconv"
 
-	"gopkg.in/reform.v1"
+	"github.com/qw4n7y/reform"
 )
 
 type sqlserver struct{}

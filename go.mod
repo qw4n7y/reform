@@ -1,4 +1,4 @@
-module gopkg.in/reform.v1
+module github.com/qw4n7y/reform
 
 go 1.17
 

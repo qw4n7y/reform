@@ -38,7 +38,7 @@ jobs:
     env:
       # no `-mod=readonly` to test PRs made by @dependabot;
       # `make ci-check-changes` step below still checks what we need
-      WORKDIR: "${{ github.workspace }}/gopath/src/gopkg.in/reform.v1"
+      WORKDIR: "${{ github.workspace }}/gopath/src/github.com/qw4n7y/reform"
       GOPATH: "${{ github.workspace }}/gopath"
       GOBIN: "${{ github.workspace }}/gopath/bin"
       GO111MODULE: "on"
@@ -166,7 +166,7 @@ jobs:
     env:
       # no `-mod=readonly` to test PRs made by @dependabot;
       # `make ci-check-changes` step below still checks what we need
-      WORKDIR: "${{ github.workspace }}/gopath/src/gopkg.in/reform.v1"
+      WORKDIR: "${{ github.workspace }}/gopath/src/github.com/qw4n7y/reform"
       GOPATH: "${{ github.workspace }}/gopath"
       GOBIN: "${{ github.workspace }}/gopath/bin"
       GO111MODULE: "on"

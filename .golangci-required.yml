@@ -9,7 +9,7 @@ linters-settings:
   govet:
     check-shadowing: true
   goimports:
-    local-prefixes: gopkg.in/reform.v1
+    local-prefixes: github.com/qw4n7y/reform
 
 linters:
   disable-all: true

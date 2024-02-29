@@ -8,9 +8,9 @@ import (
 	"github.com/AlekSi/pointer"
 	"github.com/brianvoe/gofakeit/v6"
 
-	"gopkg.in/reform.v1"
-	"gopkg.in/reform.v1/dialects/postgresql"
-	. "gopkg.in/reform.v1/internal/test/models"
+	"github.com/qw4n7y/reform"
+	"github.com/qw4n7y/reform/dialects/postgresql"
+	. "github.com/qw4n7y/reform/internal/test/models"
 )
 
 func (s *ReformSuite) TestInsert() {

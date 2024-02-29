@@ -16,9 +16,9 @@ import (
 	_ "github.com/lib/pq"
 	_ "github.com/mattn/go-sqlite3"
 
-	"gopkg.in/reform.v1"
-	"gopkg.in/reform.v1/dialects"
-	"gopkg.in/reform.v1/internal"
+	"github.com/qw4n7y/reform"
+	"github.com/qw4n7y/reform/dialects"
+	"github.com/qw4n7y/reform/internal"
 )
 
 var (

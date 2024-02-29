@@ -44,14 +44,14 @@ test-unit:
 	rm -f internal/test/models/*_reform.go
 	rm -f reform-db/*_reform.go
 
-	go install -v gopkg.in/reform.v1/reform
-	go test -count=1 -race gopkg.in/reform.v1/parse
-	go test -count=1 -covermode=count -coverprofile=parse.cover gopkg.in/reform.v1/parse
-	go generate -v -x gopkg.in/reform.v1/internal/test/models
-	go install -v gopkg.in/reform.v1/internal/test/models
+	go install -v github.com/qw4n7y/reform/reform
+	go test -count=1 -race github.com/qw4n7y/reform/parse
+	go test -count=1 -covermode=count -coverprofile=parse.cover github.com/qw4n7y/reform/parse
+	go generate -v -x github.com/qw4n7y/reform/internal/test/models
+	go install -v github.com/qw4n7y/reform/internal/test/models
 
-	go generate -v -x gopkg.in/reform.v1/reform-db
-	go install -v gopkg.in/reform.v1/reform-db
+	go generate -v -x github.com/qw4n7y/reform/reform-db
+	go install -v github.com/qw4n7y/reform/reform-db
 
 	go vet ./...
 
@@ -80,8 +80,8 @@ test-db:
 	make test-db-init
 
 	# run reform-db tests
-	go test -count=1 -race gopkg.in/reform.v1/reform-db
-	go test -count=1 -covermode=count -coverprofile=$(REFORM_TEST_COVER)_reform-db.cover gopkg.in/reform.v1/reform-db
+	go test -count=1 -race github.com/qw4n7y/reform/reform-db
+	go test -count=1 -covermode=count -coverprofile=$(REFORM_TEST_COVER)_reform-db.cover github.com/qw4n7y/reform/reform-db
 
 	# run main tests with -race
 	go test -count=1 -race

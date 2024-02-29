@@ -19,13 +19,13 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	"gopkg.in/reform.v1"
-	"gopkg.in/reform.v1/dialects/mssql" //nolint:staticcheck
-	"gopkg.in/reform.v1/dialects/postgresql"
-	"gopkg.in/reform.v1/dialects/sqlite3"
-	"gopkg.in/reform.v1/dialects/sqlserver"
-	"gopkg.in/reform.v1/internal/test"
-	. "gopkg.in/reform.v1/internal/test/models"
+	"github.com/qw4n7y/reform"
+	"github.com/qw4n7y/reform/dialects/mssql" //nolint:staticcheck
+	"github.com/qw4n7y/reform/dialects/postgresql"
+	"github.com/qw4n7y/reform/dialects/sqlite3"
+	"github.com/qw4n7y/reform/dialects/sqlserver"
+	"github.com/qw4n7y/reform/internal/test"
+	. "github.com/qw4n7y/reform/internal/test/models"
 )
 
 // DB is a global connection pool shared by tests and examples.

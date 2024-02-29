@@ -1,7 +1,7 @@
 //go:build tools
 // +build tools
 
-package tools // import "gopkg.in/reform.v1/tools"
+package tools // import "github.com/qw4n7y/reform/tools"
 
 import (
 	_ "github.com/AlekSi/gocoverutil"
